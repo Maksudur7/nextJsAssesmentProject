@@ -21,54 +21,54 @@ const Events = () => {
 
     return (
         <div className='relative'>
-            <div className="bg-[#26235B] text-[#FFB606] flex justify-center items-center h-20 text-5xl font-bold">
+            <div className="bg-[#26235B] text-[#FFB606] flex justify-center items-center h-20 md:text-5xl text-3xl font-bold">
                 <h1>Event Reservation Form</h1>
             </div>
             <div >
-                <div className=" mx-20 ">
-                    <div className='flex mt-5  justify-center items-center gap-5'>
+                <div className=" md:mx-20 mx-3 ">
+                    <div className='md:flex mt-5  justify-center items-center gap-5'>
                         <div className="input-container ">
                             <input id="firstname" className="input" type="text" placeholder=" " />
                             {/* <div className="cut"></div> */}
                             <label className="placeholder">First name</label>
                         </div>
-                        <div className="input-container inline ">
+                        <div className="input-container inline mt-5 ">
                             <input id="lastname" className="input" type="text" placeholder=" " />
                             {/* <div className="cut"></div> */}
                             <label className="placeholder">Last name</label>
                         </div>
                     </div>
-                    <div className='flex mt-5  justify-center items-center gap-5'>
+                    <div className='md:flex mt-5  justify-center items-center gap-5'>
                         <div className="input-container ">
                             <input id="email" className="input" type="email" placeholder=" " />
                             {/* <div className="cut"></div> */}
                             <label className="placeholder">Email</label>
                         </div>
-                        <div className="input-container inline ">
+                        <div className="input-container inline mt-5 ">
                             <input id="number" className="input" type="number" placeholder=" " />
                             {/* <div className="cut"></div> */}
                             <label className="placeholder">Number</label>
                         </div>
                     </div>
-                    <div className='flex mt-5  justify-center items-center gap-5'>
+                    <div className='md:flex mt-5  justify-center items-center gap-5'>
                         <div className="input-container ">
                             <input id="nationality" className="input" type="text" placeholder=" " />
                             {/* <div className="cut"></div> */}
                             <label className="placeholder">Nationality</label>
                         </div>
-                        <div className="input-container inline ">
+                        <div className="input-container inline mt-5 ">
                             <input id="gender" className="input" type="text" placeholder=" " />
                             {/* <div className="cut"></div> */}
                             <label className="placeholder">Gender</label>
                         </div>
                     </div>
-                    <div className='flex mt-5  justify-center items-center gap-5'>
+                    <div className='md:flex mt-5  justify-center items-center gap-5'>
                         <div className="input-container ">
                             <input id="dateOfBirth" className="input" type="date" placeholder=" " />
                             {/* <div className="cut"></div> */}
                             <label className="placeholder">Death Of Birth</label>
                         </div>
-                        <div className="input-container ">
+                        <div className="input-container mt-5 ">
                             <input id="nidNumber" className="input" type="number" placeholder=" " />
                             {/* <div className="cut"></div> */}
                             <label className="placeholder">NID/Birth Reg.No</label>
@@ -80,7 +80,7 @@ const Events = () => {
                         <label className="placeholder">Present Address</label>
                     </div>
 
-                    <div className='flex justify-end items-center gap-5 mb-5 mt-5 max-w-sm  '>
+                    <div className='md:flex justify-end items-center gap-5 mb-5 mt-5 max-w-sm  '>
                         <input type="checkbox" /> <p>I agree that the information is true</p>
                     </div>
                     <div className='flex justify-center items-center gap-5 mb-5 mt-5'>
@@ -91,10 +91,10 @@ const Events = () => {
             </div>
             {modalOpen && (
                 <div className="flex justify-center items-center w-full absolute h-[100vh] -mt-[100vh]">
-                    <div className="max-w-7xl">
+                    <div className="md:max-w-7xl max-w-xl">
 
                         <div className="card">
-                            <div className="leftside relative">
+                            <div className="leftside lg:inline-flex md:hidden hidden  relative ">
                                 <img
                                     src="https://i.ibb.co/4W8dxw3/pay-Background.png"
                                     className="product"
@@ -106,7 +106,7 @@ const Events = () => {
                                 </div>
                             </div>
                             <div className="rightside">
-                                <RxCross1 onClick={closeModal} className=' ml-56 mt-5 text-4xl cursor-pointer w-full' />
+                                <RxCross1 onClick={closeModal} className=' md:ml-56 ml-40 mt-5 text-4xl cursor-pointer w-full' />
                                 <form className='mt-5'>
                                     <div className='text-center'>
                                         <h1 className='text-5xl font-bold text-[#26235B]'>PROCEED TO PAY</h1>
@@ -131,7 +131,7 @@ const Events = () => {
                                     </div>
                                     <div>
                                         <h1 className='text-[#26235B] text-2xl mt-3'>PAYMENT TYPE</h1>
-                                        <div className='flex justify-center items-center gap-10'>
+                                        <div className='grid md:grid-cols-3 grid-cols-2 gap-10'>
                                             <div className='flex justify-center items-center gap-3 '>
                                                 <input type="radio" />
                                                 <img className=' h-10 w-10 ' src="https://www.logo.wine/a/logo/BKash/BKash-Icon2-Logo.wine.svg" alt="bkash" />

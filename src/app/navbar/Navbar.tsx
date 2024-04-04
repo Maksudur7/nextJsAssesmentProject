@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-[#26235B]">
+            <div className="navbar bg-[#26235B] px-10">
                 <div className="navbar-start text-white">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

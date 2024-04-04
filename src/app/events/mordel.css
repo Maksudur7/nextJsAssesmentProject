@@ -27,7 +27,7 @@
 .leftside {
     background: #030303;
     width: 25rem;
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: center;
     justify-content: center;
     border-top-left-radius: 1.5rem;
