@@ -61,7 +61,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end text-white gap-5">
                     <CiSearch size={30} />
-                    <img className="h-12 w-12 rounded-full" src="https://i.ibb.co/yPbW03q/emily-rodriguez.jpg" alt="profile" />
+                    <img className="h-12 w-12 rounded-full" src="https://i.ibb.co/QpfyK0b/profileimg.png" alt="profile" />
                 </div>
             </div>
         </div>
