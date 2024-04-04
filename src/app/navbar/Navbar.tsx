@@ -1,31 +1,40 @@
 import Link from "next/link";
+import { CiSearch } from "react-icons/ci";
 
 
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100">
-                <div className="navbar-start">
+            <div className="navbar bg-[#26235B]">
+                <div className="navbar-start text-white">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li> <Link href={`/`} >Home</Link> </li>
-                            <li> <Link href={`/about`} >About</Link> </li>
-                            {/* <li> <Link href={`/`} >Home</Link> </li> */}
+                        <ul tabIndex={0} className="menu menu-sm text-white dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li> <Link href={`/`} >HOME</Link> </li>
+                            <li> <Link href={`/about`} >ABOUT</Link> </li>
+                            <li> <Link href={`/courses`} >COURSES</Link> </li>
+                            <li> <Link href={`/shop`} >SHOP</Link> </li>
+                            <li> <Link href={`/events`} >EVENTS</Link> </li>
+                            <li> <Link href={`/contact`} >CONTACT</Link> </li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <img className="h-12 rounded-3xl" src="https://i.ibb.co/fXGtQCN/assesment-Logo.png" alt="logo" />
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li> <Link href={`/`} >Home</Link> </li>
-                        <li> <Link href={`/about`} >About</Link> </li>
+                    <ul className="menu text-white menu-horizontal px-1">
+                        <li> <Link href={`/`} >HOME</Link> </li>
+                        <li> <Link href={`/about`} >ABOUT</Link> </li>
+                        <li> <Link href={`/courses`} >COURSES</Link> </li>
+                        <li> <Link href={`/shop`} >SHOP</Link> </li>
+                        <li> <Link href={`/events`} >EVENTS</Link> </li>
+                        <li> <Link href={`/contact`} >CONTACT</Link> </li>
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <div className="navbar-end text-white gap-5">
+                    <CiSearch size={30} />
+                    <img className="h-12 w-12 rounded-full" src="https://i.ibb.co/yPbW03q/emily-rodriguez.jpg" alt="profile" />
                 </div>
             </div>
         </div>
